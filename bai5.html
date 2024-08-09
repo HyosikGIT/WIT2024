@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIT2024 - 5</title>
+    <style>
+        body
+        {
+            background-color: #e25fc6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .spinning
+        {
+            width: 80px;
+            height: 80px;
+            border: 4px solid #dc6d6d;
+            border-top: 4px solid #000000;
+            border-radius: 50%;
+            animation: quay_quay 4s linear infinite;
+        }
+
+        @keyframes quay_quay
+        {
+            0%
+            {
+                transform: rotate(0deg);
+            }
+
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="spinning"></div>
+</body>
+
+</html>
